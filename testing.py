@@ -1,4 +1,3 @@
-import math
 
 file = open("C:/test.txt","r")
 data = str(file.read())
@@ -13,7 +12,7 @@ for i in data:
 x = True
 
 for i in dataList:
-    if i != ' ' and i != ',':
+    if i != ' ' and i != ',' and i != '\n':
         num = num+1
         if i.isdigit() == False:
             print("Input must be a number")
@@ -45,9 +44,6 @@ if x == True:
 
     print("Elasticity Type: ", elastype)
     print("Elasticity Coefficient: ", elasticity)
-
-
-    print(readList[0] + readList[1])
 
 else:
     print("Calculation aborted")
