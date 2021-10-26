@@ -5,7 +5,7 @@ data = str(file.read())
 dataList = []
 readList = []
 
-num = -1
+num = 0
 
 for i in data:
     dataList.append(i)
@@ -20,7 +20,7 @@ for i in dataList:
             x = False
             break
         else:
-            print('Input Data', num +1,':', i)
+            print('Input Data', num,':', i)
             readList.append(int(i))
             
 
