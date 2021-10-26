@@ -13,7 +13,7 @@ for i in data:
 x = True
 
 for i in dataList:
-    if i != ' ':
+    if i != ' ' and i != ',':
         num = num+1
         if i.isdigit() == False:
             print("Input must be a number")
